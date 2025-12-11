@@ -1,10 +1,15 @@
-* {
-    background-color: bisque;
-}
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: bisque;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 h1 {
+    text-align: center;
+    color: red;
     border-radius: 20%;
 
     animation-name: espin;
@@ -13,11 +18,21 @@ h1 {
     animation-iteration-count: infinite;
 }
 
+img {
+    animation-name: espin;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
 @keyframes espin {
     0%{
 
     }
+    50% {
+        color: blue;
+    }
     100%{
+        color: red;
         transform: rotate(360deg);
     }
     
