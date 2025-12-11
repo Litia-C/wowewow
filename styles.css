@@ -1,6 +1,10 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: bisque;
+    background-color: brown;
+    animation-name: color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 main{
     display: flex;
@@ -23,6 +27,22 @@ img {
     animation-duration: 0.3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+}
+
+@keyframes color {
+    0%{
+        background-color: brown;
+    }
+    25%{
+        background-color: blue;
+    }
+    50%{
+        background-color: aqua;
+    }
+    100%{
+        background-color: yellowgreen;
+    }
+    
 }
 @keyframes espin {
     0%{
